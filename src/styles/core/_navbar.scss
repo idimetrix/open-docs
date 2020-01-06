@@ -1,0 +1,59 @@
+.app-header.navbar {
+  align-items: center;
+  flex-direction: row;
+  height: $header-height;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  .search {
+    position: relative;
+    width: 300px;
+
+    input {
+      color: #7e899f;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 30px 55px;
+      transition: width 0.3s ease-in-out;
+
+      &:focus {
+        width: 400px;
+      }
+    }
+
+    &::before {
+      @extend %fa-icon;
+
+      @extend .fas;
+
+      color: inherit;
+      content: fa-content($fa-var-search);
+      font-weight: 900;
+      height: 30px;
+      line-height: 30px;
+      margin: -15px 0 0 15px;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      width: 30px;
+    }
+  }
+
+  .navbar-nav {
+    align-items: center;
+    flex-direction: row;
+
+    .nav-item .nav-link {
+      color: #272f3b;
+      font-size: 14px;
+      font-weight: 600;
+      margin-left: 50px;
+
+      .icon {
+        height: 24px;
+        width: 24px;
+      }
+    }
+  }
+}

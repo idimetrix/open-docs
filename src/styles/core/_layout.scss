@@ -1,0 +1,34 @@
+@media all and (-ms-high-contrast: none) {
+  html {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  height: $header-height;
+}
+
+.app-body {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  overflow-x: hidden;
+
+  .main {
+    flex: 1;
+    min-width: 0;
+    padding: 2px 50px;
+  }
+
+  .app-sidebar {
+    flex: 0 0 $sidebar-width;
+    order: -1;
+  }
+}

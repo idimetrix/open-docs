@@ -1,0 +1,18 @@
+{
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "extends": "stylelint-config-sass-guidelines",
+  "rules": {
+    "max-nesting-depth": 10,
+    "selector-max-compound-selectors": 10,
+    "selector-max-id": 10,
+    "selector-class-pattern":"^.*$",
+    "property-blacklist": [],
+    "unit-blacklist": [],
+    "rule-empty-line-before": "always",
+    "at-rule-empty-line-before": "always",
+    "comment-no-empty": true,
+    "block-no-empty": true
+  }
+}

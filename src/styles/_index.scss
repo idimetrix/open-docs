@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic');
+
+@import '~bootstrap/scss/bootstrap';
+
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
+@import '~@fortawesome/fontawesome-free/scss/solid';
+
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
+@import 'core/core';
+
+* {
+  outline: none;
+}
+
+body {
+  background: #f2f6f8;
+  color: $body-color;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  line-height: 23px;
+}
+
+.table {
+  height: 100%;
+  margin: 0;
+}
+
+.table th,
+.table td {
+  border-top: 0.7px solid $table-border-top-color;
+}
+
+.table thead th {
+  border-bottom: 0;
+}
+
+.table thead tr:first-child th {
+  border: 0;
+}
+
+.actions {
+  align-items: center;
+  border-left: 0.5px solid #e8ecf0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+
+  .doc-preview {
+    background: #f3f4f5;
+    border-radius: 12px;
+    height: 140px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    width: 180px;
+  }
+
+  .action-items {
+    .item {
+      align-items: center;
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 16px;
+
+      .icon {
+        height: 24px;
+        margin-right: 20px;
+        width: 24px;
+      }
+
+      span {
+        color: #2896cc;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 22px;
+      }
+    }
+  }
+}

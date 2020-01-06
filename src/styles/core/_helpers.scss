@@ -1,0 +1,154 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+$sides: (top, bottom, left, right);
+
+@for $space from 1 through 100 {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+
+    .m-#{$space} {
+      margin: #{$space}px !important;
+    }
+
+    .p-#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+
+    .p-#{$space} {
+      padding: #{$space}px !important;
+    }
+  }
+}
+
+@for $space from 1 through 100 {
+  .w-#{$space} {
+    width: percentage($space / 100) !important;
+  }
+
+  .h-#{$space} {
+    height: percentage($space / 100) !important;
+  }
+
+  .m-l-#{$space} {
+    margin-left: #{$space}px;
+  }
+
+  .m-r-#{$space} {
+    margin-right: #{$space}px;
+  }
+
+  .m-t-#{$space} {
+    margin-top: #{$space}px;
+  }
+
+  .m-b-#{$space} {
+    margin-bottom: #{$space}px;
+  }
+
+  .p-l-#{$space} {
+    padding-left: #{$space}px;
+  }
+
+  .p-r-#{$space} {
+    padding-right: #{$space}px;
+  }
+
+  .p-t-#{$space} {
+    padding-top: #{$space}px;
+  }
+
+  .p-b-#{$space} {
+    padding-bottom: #{$space}px;
+  }
+}
+
+.d-table {
+  display: table;
+}
+
+.d-table-row {
+  display: table-row;
+}
+
+.d-table-cell {
+  display: table-cell;
+}
+
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.float-none {
+  float: none !important;
+}
+
+.align-baseline {
+  vertical-align: baseline;
+}
+
+.align-top {
+  vertical-align: top;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.align-bottom {
+  vertical-align: bottom;
+}
+
+.align-text-bottom {
+  vertical-align: text-bottom;
+}
+
+.align-text-top {
+  vertical-align: text-top;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.img-fluid {
+  height: auto;
+  max-width: 100%;
+}
+
+.bg-white {
+  background: #fff;
+}
